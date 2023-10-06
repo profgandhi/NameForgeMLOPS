@@ -15,7 +15,7 @@ class Tokenizer(ABC):
 class CharacterTokenizer(Tokenizer):
 
     def __init__(self,text: str):
-        self.vocab = sorted(list(set(text)) + ['.']) #Start and end token
+        self.vocab = sorted(list(set(text+'.'))) #Start and end token
     
         self.stoi = {ch:i for i, ch in enumerate(self.vocab)} #string to integer
 

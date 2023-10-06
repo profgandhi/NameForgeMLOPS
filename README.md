@@ -12,3 +12,21 @@ This Python project utilizes PyTorch to train a deep learning model for generati
 - Simple command-line interface for generating names.
 
 
+## Docker
+ - Created Dockerfile with ubuntu base image
+ - Downloaded python, pip and packages using RUN
+ - Transfer files and models from local directory using COPY
+ - Running inference_pipeline.py using CMD 
+ - Build image with name polo123/namesforge and ran image successfully
+ - Pushed to Docker Hub
+
+
+## Unit tests
+ - pytest test in tests folder
+ - Added tests for tokenizer
+ - Added test for build_dataset 
+
+
+
+
+
